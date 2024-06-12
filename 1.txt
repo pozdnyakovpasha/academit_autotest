@@ -3,3 +3,4 @@
 3) Создал текстовый файл, git init, git add 1.txt
 4) git commit -m "first commit", git branch -M main
 5) Связал локальный репозиторий и удаленный репозиторий
+6) Вношу изменения в файле на сайте github, иду пробовать pull
