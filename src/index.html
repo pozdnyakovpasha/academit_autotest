@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <link href="./style.css" rel="stylesheet" type="text/css">
+        <title>Мой первый сайт!</title>
+    </head>
+    <body>
+        <h1>Форма</h1>
+        <form action="..." method="post" class="main_form" id="main_form">
+            <input type="text" placeholder="Введите имя" class="test_input">
+            <p>Введите ваш отзыв:</p>
+            <textarea name="comment"></textarea><br>
+            <input type="checkbox" />1
+            <input type="checkbox" />2
+            <input type="checkbox" />3<br>
+            <input type="radio" id="radio_1" name="counter"/><label for="radio_1">Один</label>
+            <input type="radio" id="radio_2" name="counter" /><label for="radio_2">Два</label>
+            <input type="radio" id="radio_3" name="counter" /><label for="radio_3">Три</label>
+            <p id="choose_of_dish">Выберите блюдо:</p>
+            <p><select size="1" form="main_form">
+                <option>Пицца</option>
+                <option>Бургер</option>
+                <option>Паста</option>
+                <option>Суп</option>
+            </select></p><br>
+            <p><select multiple size="4" form="main_form">
+                <option>Пицца</option>
+                <option>Бургер</option>
+                <option>Паста</option>
+                <option>Суп</option>
+            </select></p><br>
+            <input type="submit" />
+        </form>
+        <h3>Ссылка</h3>
+        <a href="gallery.html">Галерея</a>
+    </body>
+</html>
