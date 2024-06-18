@@ -7,30 +7,31 @@
     </head>
     <body>
         <h1>Форма</h1>
-        <form action="..." method="post" class="main_form" id="main_form">
-            <input type="text" placeholder="Введите имя" class="test_input">
+        <form action="/address.php" method="post" class="main_form" id="main_form">
+            <input type="text" placeholder="Введите имя" class="test_input" name="test_input">
             <p>Введите ваш отзыв:</p>
             <textarea name="comment"></textarea><br>
-            <input type="checkbox" />1
-            <input type="checkbox" />2
-            <input type="checkbox" />3<br>
+            <input type="checkbox" id="check_1" name="check_1"/><label for="check_1">1 чек-бокс</label>
+            <input type="checkbox" id="check_2" name="check_2"/><label for="check_2">2 чек-бокс</label>
+            <input type="checkbox" id="check_3" name="check_3"/><label for="check_3">3 чек-бокс</label><br>
             <input type="radio" id="radio_1" name="counter"/><label for="radio_1">Один</label>
             <input type="radio" id="radio_2" name="counter" /><label for="radio_2">Два</label>
             <input type="radio" id="radio_3" name="counter" /><label for="radio_3">Три</label>
             <p id="choose_of_dish">Выберите блюдо:</p>
-            <p><select size="1" form="main_form">
-                <option>Пицца</option>
-                <option>Бургер</option>
-                <option>Паста</option>
-                <option>Суп</option>
+            <p><select size="1" form="main_form" name="single_choice">
+                <option name="single_choice_1">Пицца</option>
+                <option name="single_choice_2">Бургер</option>
+                <option name="single_choice_3">Паста</option>
+                <option name="single_choice_3">Суп</option>
             </select></p><br>
-            <p><select multiple size="4" form="main_form">
-                <option>Пицца</option>
-                <option>Бургер</option>
-                <option>Паста</option>
-                <option>Суп</option>
+            <p><select multiple size="4" form="main_form" name="multiple choice">
+                <option name="multiple choice_1">Пицца</option>
+                <option name="multiple choice_2">Бургер</option>
+                <option name="multiple choice_3">Паста</option>
+                <option name="multiple choice_4">Суп</option>
             </select></p><br>
-            <input type="submit" />
+            <button type="submit">Отправить</button>
+<!--            <input type="submit" />-->
         </form>
         <h3>Ссылка</h3>
         <a href="gallery.html">Галерея</a>
